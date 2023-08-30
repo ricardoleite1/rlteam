@@ -225,6 +225,14 @@
       flex-direction: column;
       text-align: center;
     }
+
+    footer {
+      flex-direction: column;
+      padding: 2rem;
+      display: flex; 
+      gap: .75rem; 
+      flex-direction: column;
+    }
   }
 
   @media screen and (max-width: 600px) {
@@ -246,6 +254,14 @@
     .plans-container {
       flex-direction: column;
       text-align: center;
+    }
+
+    section.about img {
+      width: 400px;
+    }
+
+    .links {
+      margin-bottom: 2rem;
     }
   }
 
@@ -271,6 +287,10 @@
     .plans-container {
       flex-direction: column;
       text-align: center;
+    }
+
+    section.about img {
+      width: 300px;
     }
   }
 </style>
@@ -372,7 +392,7 @@
     <div>
       <img width="100" src="assets/logo_branco.png" alt="">
     </div>
-    <div>
+    <div class="links">
       <a href="/">Início</a>
       <a href="">Contato</a>
       <a href="">Políticas de privacidade</a>
