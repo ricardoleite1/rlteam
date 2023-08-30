@@ -170,6 +170,10 @@
     border-radius: .75rem;
   }
 
+  .benefits img {
+    filter: invert();
+  }
+
   .plans-container {
     display: flex;
   }
@@ -233,6 +237,10 @@
       gap: .75rem; 
       flex-direction: column;
     }
+
+    .plans {
+      gap: 1rem;
+    }
   }
 
   @media screen and (max-width: 600px) {
@@ -262,6 +270,10 @@
 
     .links {
       margin-bottom: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 1rem;
     }
   }
 
@@ -292,6 +304,10 @@
     section.about img {
       width: 300px;
     }
+  }
+
+  .focus {
+    font-size: 2rem;
   }
 </style>
 
@@ -354,35 +370,35 @@
     <div class="plans-container">
       <div class="plan">
         <header>Combo dieta + treino</header>
-        Plano <strong>Mensal</strong>
+        <div style="display: flex; flex-direction: row; gap: .5rem; margin-bottom: .75rem; justify-content: center;">Plano <strong>Mensal</strong></div>
         <div>
           <span>de <span class="cut">R$ 199,00</span> por apenas</span>
           Mensal
-          <strong>R$ 119,50</strong>
+          <strong class="focus">R$ 89,50</strong>
         </div>
         <a target="_blank" href="https://wa.link/hgtvp0"><button>Compre o combo mensal!</button></a>
       </div>
       <div class="plan">
         <header>Combo dieta + treino</header>
-        Plano <strong>Semestral</strong>
+        <div style="display: flex; flex-direction: row; gap: .5rem; margin-bottom: .75rem; justify-content: center;">Plano <strong>Semestral</strong></div>
         <div>
-          <span>de <span class="cut">R$ 1.194,00</span> por apenas</span>
+          <span>de <span class="cut">R$ 537,00</span> por apenas</span>
           6x de
-          <strong>R$ 99,80</strong>
+          <strong class="focus">R$ 69,90</strong>
         </div>
         <a target="_blank" href="https://wa.link/hgtvp0"><button>Compre o combo mensal!</button></a>
       </div>
       <div class="plan">
         <header>Individual dieta ou treino</header>
-        Plano <strong>Semestral</strong>
+        <div style="display: flex; flex-direction: row; gap: .5rem; margin-bottom: .75rem; justify-content: center;">Plano <strong>Semestral</strong></div>
         <div>
-          <span>de <span class="cut">R$ 1.194,00</span> por apenas</span>
+          <span>de <span class="cut">R$ 359,40</span> por apenas</span>
           6x de
-          <strong>R$ 99,80</strong>
+          <strong class="focus">R$ 299,40</strong>
         </div>
-        <div>
-          <a target="_blank" href="https://wa.link/hgtvp0"><button>Treino</button></a>
-          <a target="_blank" href="https://wa.link/hgtvp0"><button>Dieta</button></a>
+        <div style="flex-direction: row; gap: 1rem;">
+          <a target="_blank" href="https://wa.link/hgtvp0"><button style="width: 150px">Treino</button></a>
+          <a target="_blank" href="https://wa.link/hgtvp0"><button style="width: 150px">Dieta</button></a>
         </div>
       </div>
     </div>
