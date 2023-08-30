@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RL Team -</title>
+  <title>RL Team - Início</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
@@ -144,6 +144,11 @@
   }
 
   .benefits {
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .benefits .cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     max-width: 900px;
@@ -151,13 +156,14 @@
     margin: 0 auto;
     gap: 2rem;
     justify-content: center;
+    margin-top: 2rem;
   }
 
-  .benefits div {
+  .benefits .cards div {
+    background: #ed1e24;
     display: flex;
     gap: 1rem;
     align-items: center;
-    background: #ed1e24;
     color: #fff;
     padding: 2rem;
     font-weight: bold;
@@ -203,17 +209,107 @@
     gap: .3rem;
     align-items: center;
   }
+
+  @media screen and (max-width: 900px) {
+    section.about {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .benefits .cards {
+      grid-template-columns: 1fr 1fr;
+      max-width: 600px;
+    }
+
+    .plans-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    section.about {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .benefits .cards {
+      grid-template-columns: 1fr 1fr;
+      max-width: 450px;
+      font-size: .9rem;
+    }
+
+    .benefits .cards div {
+      padding: 1rem;
+    }
+
+    .plans-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    section.about {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .benefits .cards {
+      grid-template-columns: 1fr;
+      max-width: 450px;
+      font-size: .9rem;
+    }
+
+    .benefits .cards div {
+      padding: 1rem;
+      max-width: 280px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .plans-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
 </style>
 
 <body>
   <header class="header">
     <div>
-      <img width="200" src="assets/logo.png" alt="">
+      <img width="200" src="assets/logo_branco.png" alt="">
       <!-- <h2>Conquiste a força e o físico dos seus sonhos!</h2>
       <h4>Entre para o time do maior atleta de fisiculturismo natural do Brasil.</h4> -->
       <!-- <button>Faça parte do RL Team</button> -->
     </div>
   </header>
+
+  <section class="benefits">
+    <h1>Quais são os benefícios?</h1>
+    <div class="cards">
+      <div>
+        <img width="50" src="assets/icons/dumbell.png" alt="">
+        Treino individualizado e periodizado
+      </div>
+      <div>
+        <img width="50" src="assets/icons/stretching.png" alt="">
+        Prescrição de alongamento e mobilidade
+      </div>
+      <div>
+        <img width="50" src="assets/icons/apple.png" alt="">
+        Dieta individualizada e flexível
+      </div>
+      <div>
+        <img width="50" src="assets/icons/biceps.png" alt="">
+        Ganho de força de forma segura e eficiente
+      </div>
+      <div>
+        <img width="50" src="assets/icons/whatsapp.png" alt="">
+        Suporte individualizado via WhatsApp
+      </div>
+    </div>
+  </section>
 
   <section class="about">
     <div class="who">
@@ -228,29 +324,6 @@
       <a href="#plans"><button>Faça parte do RL Team</button></a>
     </div>
     <img src="assets/rick2.png" alt="">
-  </section>
-
-  <section class="benefits">
-    <div>
-      <img width="50" src="assets/icons/dumbell.png" alt="">
-      Treino individualizado e periodizado
-    </div>
-    <div>
-      <img width="50" src="assets/icons/stretching.png" alt="">
-      Prescrição de alongamento e mobilidade
-    </div>
-    <div>
-      <img width="50" src="assets/icons/apple.png" alt="">
-      Dieta individualizada
-    </div>
-    <div>
-      <img width="50" src="assets/icons/biceps.png" alt="">
-      Ganho de força de forma segura e eficiente
-    </div>
-    <div>
-      <img width="50" src="assets/icons/whatsapp.png" alt="">
-      Suporte individualizado via WhatsApp
-    </div>
   </section>
 
   <section id="plans" class="plans">
