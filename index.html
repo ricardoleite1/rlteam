@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<style>
+  * {
+    padding: 0;
+    border: none;
+    margin: 0;
+    font-family: 'Roboto', Geneva, Tahoma, sans-serif;
+  }
+
+  header.header {
+    max-height: 350px;
+    color: #fff;
+    background: url('assets/icons/test.png');
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  header.header div {
+    padding: 2rem;
+    text-align: center;
+  }
+
+  header.header img {
+    margin-bottom: 1rem;
+  }
+
+  section.about button {
+    background: #ed1e24;
+    padding: 1rem;
+    border-radius: .75rem;
+    color: #fff;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+
+  section.about button:hover {
+    background: #921116;
+  }
+
+  section.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    padding: 2rem;
+    margin-bottom: 2.5rem;
+  }
+
+  section.about div {
+    max-width: 500px;
+  }
+
+  section.about .who {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  section.about img {
+    width: 400px;
+    border-radius: 0px 125px 0px 125px;
+    border: 6px solid #921116;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 4rem;
+    background: #181717;
+    color: #fff;
+    margin-top: 1rem;
+    align-items: center;
+  }
+
+  footer a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  body {
+    color: #fff;
+    background: #333;
+  }
+
+  .plans {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    color: #fff;
+    margin-top: 3rem;
+  }
+
+  .plans .plan {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .plans .plan button {
+    background: #921116;
+    color: #fff;
+    margin-top: 1rem;
+    padding: .5rem 1rem;
+    border-radius: .25rem;
+    cursor: pointer;
+    font-size: 1.25rem;
+  }
+
+  .plans .plan div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .plans .plan header {
+    border: 1px solid #ed1e24;
+    background: #181717;
+    border-radius: .5rem;
+    padding: .5rem 2rem;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .benefits {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 900px;
+    align-items: center;
+    margin: 0 auto;
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  .benefits div {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    background: #ed1e24;
+    color: #fff;
+    padding: 2rem;
+    font-weight: bold;
+    border-radius: .75rem;
+  }
+
+  .plans-container {
+    display: flex;
+  }
+
+  .plans .header {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .plans .header span {
+    font-size: 1rem;
+  }
+
+  span.cut {
+    color: red;
+    font-weight: bold;
+    text-decoration: line-through;
+  }
+</style>
+
+<body>
+  <header class="header">
+    <div>
+      <img width="200" src="assets/logo.png" alt="">
+      <!-- <h2>Conquiste a força e o físico dos seus sonhos!</h2>
+      <h4>Entre para o time do maior atleta de fisiculturismo natural do Brasil.</h4> -->
+      <!-- <button>Faça parte do RL Team</button> -->
+    </div>
+  </header>
+
+  <section class="about">
+    <div class="who">
+      <h2>Quem é o Ricardo?</h2>
+      <span>Ricardo possui conhecimentos nutricionais e de treinamento.</span>
+      <span>Ricardo produz conteúdo para as redes sociais com o intuito de trazer conhecimento grautito para todos.</span>
+      <span>Criou esse time no final de 2023 para aqueles que desejam um acompanhamento mais próximo.</span>
+      Ricardo está cursando faculdade de educação física e nutrição pela UFBRA e já realizou diversos cursos, como: Powerbuilding, Musculação Faixa Preta, Bodybuilding Coach, Nutrologia Esportiva, Fáscia e LPF.
+      <span>
+        O objetivo da consultoria é desenvolver o melhor treino e a melhor dieta para que você conquiste a força e o físico dos seus sonhos, sem terrorismo nutricional e sem perder tempo.
+      </span>
+      <button>Faça parte do RL Team</button>
+    </div>
+    <img src="assets/rick2.png" alt="">
+  </section>
+
+  <section class="benefits">
+    <div>
+      <img width="50" src="assets/icons/dumbell.png" alt="">
+      Treino individualizado e periodizado
+    </div>
+    <div>
+      <img width="50" src="assets/icons/stretching.png" alt="">
+      Prescrição de alongamento e mobilidade
+    </div>
+    <div>
+      <img width="50" src="assets/icons/apple.png" alt="">
+      Dieta individualizada
+    </div>
+    <div>
+      <img width="50" src="assets/icons/biceps.png" alt="">
+      Ganho de força de forma segura e eficiente
+    </div>
+    <div>
+      <img width="50" src="assets/icons/whatsapp.png" alt="">
+      Suporte individualizado via WhatsApp
+    </div>
+  </section>
+
+  <section class="plans">
+    <div class="header">
+      <h1>Conheça nossos planos</h1>
+      <span>Agora é a hora de <strong>construir a sua melhor versão!</strong></span>
+    </div>
+    <div class="plans-container">
+      <div class="plan">
+        <header>Combo dieta + treino</header>
+        Plano <strong>Mensal</strong>
+        <div>
+          <span>de <span class="cut">R$ 199,00</span> por apenas</span>
+          Mensal
+          <strong>R$ 119,50</strong>
+        </div>
+        <button>Compre o combo mensal!</button>
+      </div>
+      <div class="plan">
+        <header>Combo dieta + treino</header>
+        Plano <strong>Semestral</strong>
+        <div>
+          <span>de <span class="cut">R$ 1.194,00</span> por apenas</span>
+          6x de
+          <strong>R$ 99,80</strong>
+        </div>
+        <button>Compre o combo mensal!</button>
+      </div>
+      <div class="plan">
+        <header>Individual dieta ou treino</header>
+        Plano <strong>Semestral</strong>
+        <div>
+          <span>de <span class="cut">R$ 1.194,00</span> por apenas</span>
+          6x de
+          <strong>R$ 99,80</strong>
+        </div>
+        <div>
+          <button>Treino</button>
+          <button>Dieta</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div>
+      <img width="100" src="assets/logo_branco.png" alt="">
+    </div>
+    <div>
+      <a href="/">Início</a>
+      <a href="">Contato</a>
+      <a href="">Políticas de privacidade</a>
+      <a href="">Termos de uso</a>
+      © 2023 Copyright - Ricardo Leite
+    </div>
+    <div>
+      <a href="">Instagram</a>
+      <a href="">Tiktok</a>
+    </div>
+  </footer>
+</body>
+</html>
