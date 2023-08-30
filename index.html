@@ -3,10 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>RL Team -</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+  <link rel="manifest" href="assets/site.webmanifest">
+  <link rel="mask-icon" href="assets/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
 </head>
 
 <style>
@@ -72,7 +79,7 @@
   section.about img {
     width: 400px;
     border-radius: 0px 125px 0px 125px;
-    border: 6px solid #921116;
+    border: 6px solid #ed1e24;
   }
 
   footer {
@@ -113,7 +120,7 @@
   }
 
   .plans .plan button {
-    background: #921116;
+    background: #ed1e24;
     color: #fff;
     margin-top: 1rem;
     padding: .5rem 1rem;
@@ -128,7 +135,7 @@
   }
 
   .plans .plan header {
-    border: 1px solid #ed1e24;
+    border: 2px solid #ed1e24;
     background: #181717;
     border-radius: .5rem;
     padding: .5rem 2rem;
@@ -175,6 +182,27 @@
     font-weight: bold;
     text-decoration: line-through;
   }
+
+  a {
+    scroll-behavior: smooth !important;
+  }
+
+  .social-media img {
+    filter: invert();
+    width: 40px;
+  }
+
+  .social-media {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .social-media a {
+    display: flex;
+    gap: .3rem;
+    align-items: center;
+  }
 </style>
 
 <body>
@@ -197,7 +225,7 @@
       <span>
         O objetivo da consultoria é desenvolver o melhor treino e a melhor dieta para que você conquiste a força e o físico dos seus sonhos, sem terrorismo nutricional e sem perder tempo.
       </span>
-      <button>Faça parte do RL Team</button>
+      <a href="#plans"><button>Faça parte do RL Team</button></a>
     </div>
     <img src="assets/rick2.png" alt="">
   </section>
@@ -225,7 +253,7 @@
     </div>
   </section>
 
-  <section class="plans">
+  <section id="plans" class="plans">
     <div class="header">
       <h1>Conheça nossos planos</h1>
       <span>Agora é a hora de <strong>construir a sua melhor versão!</strong></span>
@@ -239,7 +267,7 @@
           Mensal
           <strong>R$ 119,50</strong>
         </div>
-        <button>Compre o combo mensal!</button>
+        <a target="_blank" href="https://wa.link/hgtvp0"><button>Compre o combo mensal!</button></a>
       </div>
       <div class="plan">
         <header>Combo dieta + treino</header>
@@ -249,7 +277,7 @@
           6x de
           <strong>R$ 99,80</strong>
         </div>
-        <button>Compre o combo mensal!</button>
+        <a target="_blank" href="https://wa.link/hgtvp0"><button>Compre o combo mensal!</button></a>
       </div>
       <div class="plan">
         <header>Individual dieta ou treino</header>
@@ -260,8 +288,8 @@
           <strong>R$ 99,80</strong>
         </div>
         <div>
-          <button>Treino</button>
-          <button>Dieta</button>
+          <a target="_blank" href="https://wa.link/hgtvp0"><button>Treino</button></a>
+          <a target="_blank" href="https://wa.link/hgtvp0"><button>Dieta</button></a>
         </div>
       </div>
     </div>
@@ -278,9 +306,9 @@
       <a href="">Termos de uso</a>
       © 2023 Copyright - Ricardo Leite
     </div>
-    <div>
-      <a href="">Instagram</a>
-      <a href="">Tiktok</a>
+    <div class="social-media">
+      <a target="_blank" href="https://instagram.com/ricardoleiteb"><img src="assets/icons/instagram.png" alt="">Instagram</a>
+      <a target="_blank" href="https://tiktok.com/@ricardoleiteb"><img src="assets/icons/tiktok.png" alt="">Tiktok</a>
     </div>
   </footer>
 </body>
